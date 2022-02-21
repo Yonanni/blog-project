@@ -1,25 +1,21 @@
 import React, { Component } from "react";
 import { Container, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.jpg";
-import "./style.css"
-export default class Topnav extends Component {
+import logo from "../../assets/logo.png";
+import "./navbar.css";
+export default class NavBar extends Component {
   render() {
     return (
       <Navbar expand="lg" className="blog-navbar" fixed="top">
         <Container className="justify-content-between">
-          <Navbar.Brand 
-          // as={Link}
-          //  to="/"
-           >
+          <Navbar.Brand as={Link} to="/">
             <img className="blog-navbar-brand" alt="logo" src={logo} />
           </Navbar.Brand>
 
           <Button
-          
-            // as={Link}
-            // to="/new"
-            className="blog-navbar-add-button bg-dark d-flex justify-content"
+            as={Link}
+            to="/new"
+            className="blog-navbar-add-button bg-dark"
             size="lg"
           >
             <svg
