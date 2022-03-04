@@ -3,13 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import "./styles.css";
 
 const CommentForm = (props) =>  {
-    // constructor(props) {
-    //   super(props);
-    //   this.state = {
-    //     name: "",
-    //     text: ""        
-    //   };
-    // }
+   
 
     const [comment, setComment] = useState({
       name: "",
