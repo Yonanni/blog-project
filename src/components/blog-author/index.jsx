@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import "./styles.css";
-export default class BlogAuthor extends Component {
-  state = {
-    verified: true // when signed in as author or admin, verified = true.
-  }
-  render() {
-    const { name, avatar } = this.props;
+ const BlogAuthor = ({ name, avatar })=> {
+
+ const [verified, setVerified] = useState(true)// when signed in as author or admin, verified = true.
+
+  
     return (
       <Row>
         <Col xs={2}>
@@ -19,5 +18,6 @@ export default class BlogAuthor extends Component {
         </Col>
       </Row>
     );
-  }
+
 }
+export default BlogAuthor
